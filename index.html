@@ -1,27 +1,13 @@
-
-<body>
-
-<header>
-...
-</header>
-
-<section class="hero">
-...
-</section>
-
-<section class="products">
-...
-</section><!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
 <head>
 <title>Captune Cart</title>
 <style>
 body{
-margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 background:#141414;
 color:white;
+margin:0;
 }
 
 header{
@@ -33,9 +19,15 @@ align-items:center;
 }
 
 .logo{
-font-size:32px;
-font-weight:bold;
+font-size:30px;
 color:#E50914;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
 }
 
 .hero{
@@ -43,19 +35,12 @@ text-align:center;
 padding:100px 20px;
 }
 
-.hero h1{
-font-size:50px;
-margin-bottom:20px;
-}
-
 .btn{
 background:#E50914;
 color:white;
 padding:12px 25px;
-border:none;
+text-decoration:none;
 border-radius:5px;
-cursor:pointer;
-font-size:16px;
 }
 
 .products{
@@ -63,92 +48,52 @@ display:flex;
 justify-content:center;
 gap:20px;
 padding:40px;
-flex-wrap:wrap;
 }
 
 .card{
 background:#222;
 padding:20px;
 border-radius:10px;
-width:220px;
+width:250px;
 text-align:center;
 }
-
-.card img{
-width:100%;
-border-radius:8px;
-}
-
-footer{
-background:black;
-padding:20px;
-text-align:center;
-margin-top:40px;
-} </style>
-
+</style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">🛒 CAPTUNE CART</div>
-<div>Login | Cart</div>
+<div class="logo">Captune Cart</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="cart.html">Cart</a>
+</nav>
 </header>
 
 <section class="hero">
 <h1>🔥 Mega Sale 50% OFF 🔥</h1>
 <p>Shop Smart, Live Better</p>
-<button class="btn">Shop Now</button>
+<a href="cart.html" class="btn">Shop Now</a>
 </section>
 
 <section class="products">
-
 <div class="card">
-<h3>⌚ Smart Watch</h3>
-<p>₹2,999</p>
-<button class="btn">Buy Now</button>
+<h2>⌚ Smart Watch</h2>
+<p>₹2999</p>
 </div>
 
 <div class="card">
-<h3>🎧 Headphones</h3>
-<p>₹1,999</p>
-<button class="btn">Buy Now</button>
+<h2>🎧 Headphones</h2>
+<p>₹1999</p>
 </div>
 
 <div class="card">
-<h3>👟 Shoes</h3>
-<p>₹3,499</p>
-<button class="btn">Buy Now</button>
+<h2>👟 Shoes</h2>
+<p>₹3499</p>
 </div>
-
 </section>
-
-<footer>
-<p>Email: support@captune.com</p>
-<p>Phone: +91 7899435068</p>
-</footer>
 
 </body>
 </html>
-<section class="products">
-  <section class="categories">
-<h2>Shop by Category</h2>
-
-<button class="btn">Electronics</button>
-<button class="btn">Fashion</button>
-<button class="btn">Shoes</button>
-<button class="btn">Accessories</button>
-</section>
-<style>
-  .categories{
-text-align:center;
-padding:30px;
-}
-
-.categories button{
-margin:10px;
-}<section class="categories">
-<h2>Shop by Category</h2>
-...
-</section>
-  <section class="products">
