@@ -1,19 +1,34 @@
+┌──────────────────────────────────────────┐
+│ Logo     Search          🔔  👤 Santhu   │
+└──────────────────────────────────────────┘
 
-<div class="user-menu">
-    <img src="profile.jpg" class="profile-pic">
+┌────────────┬─────────────────────────────┐
+│ Dashboard  │     Cover Banner            │
+│ Orders     │                             │
+│ Wishlist   │      Profile Image          │
+│ Settings   │      Santhu Kumar ✓         │
+│ Logout     │      Premium Member         │
+└────────────┴─────────────────────────────┘
 
-    <div class="user-info">
-        <h4>Santhu</h4>
-        <span>Premium Member</span>
-    </div>
+┌─────────┬─────────┬─────────┬─────────┐
+│ Orders  │Wishlist │Spent ₹  │ Rating  │
+└─────────┴─────────┴─────────┴─────────┘
 
-    <a href="profile.html">Profile</a>
-</div>--------------------------------------------------
-Logo      Home Shop Deals      Search    👤 Santhu
---------------------------------------------------
-
-                Banner
-
---------------------------------------------------
-Products
---------------------------------------------------
+Recent Orders
+Saved Addresses
+Account Settingsbackground: #0f172a;
+card: #1e293b;
+accent: #8b5cf6;
+text: #ffffff;// Dark mode toggle
+// Edit profile popup
+// Notification dropdown
+// Profile image upload
+// Logout confirmation
+// Animated counters<input type="file" id="upload">
+<img id="profilePic">document.getElementById("upload").onchange = function(e){
+    const reader = new FileReader();
+    reader.onload = function(){
+        document.getElementById("profilePic").src = reader.result;
+    }
+    reader.readAsDataURL(e.target.files[0]);
+}
