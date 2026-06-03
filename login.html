@@ -1,20 +1,140 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login</title>
+<title>Captune Cart Login</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1600');
+background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-container{
+width:420px;
+background:rgba(20,20,20,.95);
+padding:50px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(229,9,20,.5);
+}
+
+.logo{
+text-align:center;
+font-size:40px;
+font-weight:bold;
+color:#E50914;
+margin-bottom:10px;
+}
+
+.tagline{
+text-align:center;
+color:#ccc;
+margin-bottom:30px;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+background:#2a2a2a;
+color:white;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#E50914;
+border:none;
+border-radius:8px;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.03);
+background:#ff1f1f;
+}
+
+.links{
+margin-top:20px;
+display:flex;
+justify-content:space-between;
+}
+
+a{
+color:#E50914;
+text-decoration:none;
+}
+
+.social{
+margin-top:25px;
+text-align:center;
+}
+
+.social button{
+width:48%;
+margin:5px;
+background:#333;
+}
+
+.footer{
+text-align:center;
+margin-top:25px;
+color:#888;
+font-size:14px;
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>Captune Cart Login</h1>
+<div class="login-container">
 
-<input type="email" placeholder="Enter Email">
-<br><br>
+<div class="logo">🛒 Captune Cart</div>
 
-<input type="password" placeholder="Enter Password">
-<br><br>
+<div class="tagline">
+Premium Shopping Experience
+</div>
+
+<input type="email" placeholder="Email Address">
+
+<input type="password" placeholder="Password">
 
 <button>Login</button>
+
+<div class="links">
+<a href="#">Forgot Password?</a>
+<a href="#">Sign Up</a>
+</div>
+
+<div class="social">
+<button>Google</button>
+<button>Facebook</button>
+</div>
+
+<div class="footer">
+© 2026 Captune Cart
+</div>
+
+</div>
 
 </body>
 </html>
