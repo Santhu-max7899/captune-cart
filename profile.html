@@ -1,57 +1,168 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Captune Cart Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captune Cart - My Account</title>
+
 <style>
-body{
-    background:#0f172a;
-    color:white;
-    font-family:Arial;
-    text-align:center;
-    padding-top:100px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
-.card{
-    width:400px;
-    margin:auto;
-    background:#1e293b;
+
+body{
+    background:#f5f5f6;
+}
+
+.header{
+    background:white;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.profile{
+    background:white;
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
     padding:30px;
-    border-radius:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.profile img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+
+.profile h1{
+    margin-top:10px;
+    color:#282c3f;
+}
+
+.profile p{
+    color:#ff3f6c;
+    font-weight:bold;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.menu{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.menu a{
+    display:block;
+    padding:18px;
+    text-decoration:none;
+    color:#282c3f;
+    border-bottom:1px solid #eee;
+}
+
+.menu a:hover{
+    background:#fafafa;
+}
+
+.orders{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}
+
+.order{
+    padding:15px 0;
+    border-bottom:1px solid #eee;
 }
 </style>
 </head>
+
 <body>
 
-<div class="banner"></div>
+<div class="header">
+    <h2>Captune Cart</h2>
+</div>
 
-<div class="profile-container">
+<div class="profile">
+    <img src="https://i.pravatar.cc/200">
+    <h1>Santhu Kumar</h1>
+    <p>👑 Premium Member</p>
 
-    <img src="https://i.pravatar.cc/200" class="profile-pic">
+    <div class="stats">
+        <div class="card">
+            <h2>24</h2>
+            <span>Orders</span>
+        </div>
 
-    <h1>Santhu Kumar ✓</h1>
-    <p class="premium">👑 Premium Member</p>
+        <div class="card">
+            <h2>18</h2>
+            <span>Wishlist</span>
+        </div>
 
-    <!-- rest of the profile code -->
+        <div class="card">
+            <h2>12</h2>
+            <span>Coupons</span>
+        </div>
 
+        <div class="card">
+            <h2>850</h2>
+            <span>Rewards</span>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+    <a href="#">📦 My Orders</a>
+    <a href="#">❤️ Wishlist</a>
+    <a href="#">📍 Saved Addresses</a>
+    <a href="#">💳 Payment Methods</a>
+    <a href="#">🔔 Notifications</a>
+    <a href="#">⚙️ Settings</a>
+    <a href="#">🚪 Logout</a>
+</div>
+
+<div class="orders">
+    <h2>Recent Orders</h2>
+
+    <div class="order">
+        Smart Watch - Delivered ✅
+    </div>
+
+    <div class="order">
+        Headphones - Delivered ✅
+    </div>
+
+    <div class="order">
+        Shoes - Shipped 🚚
+    </div>
 </div>
 
 </body>
-</html>┌─────────────────────────────────────────────┐
-│                COVER BANNER                 │
-└─────────────────────────────────────────────┘
-
-      👤 Profile Photo
-      Santhu Kumar ✓
-      Premium Member
-
-┌────────┬────────┬────────┬────────┐
-│ Orders │Wishlist│ Spent  │ Rating │
-└────────┴────────┴────────┴────────┘
-
-📦 Recent Orders
-❤️ Wishlist Items
-📍 Saved Addresses
-💳 Payment Methods
-🔔 Notifications
-⚙️ Account Settings
-
-[ Edit Profile ] [ Logout ]
+</html>
+```
