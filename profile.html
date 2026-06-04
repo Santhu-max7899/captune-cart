@@ -1,64 +1,252 @@
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Captune Cart Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Profile</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial,sans-serif;
-            background:#f5f5f6;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        .banner{
-            background:linear-gradient(135deg,#ff3f6c,#ff6f91);
-            color:white;
-            text-align:center;
-            padding:40px;
-        }
+body{
+    background:#f5f5f6;
+}
 
-        .profile{
-            background:white;
-            width:90%;
-            max-width:1000px;
-            margin:20px auto;
-            padding:30px;
-            border-radius:15px;
-        }
+/* Header */
+.header{
+    background:white;
+    padding:18px 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
 
-        .profile-top{
-            display:flex;
-            align-items:center;
-            gap:25px;
-        }
+.logo{
+    color:#ff3f6c;
+    font-size:28px;
+    font-weight:bold;
+}
 
-        .profile img{
-            width:130px;
-            height:130px;
-            border-radius:50%;
-            border:4px solid #ff3f6c;
-        }
-    </style>
+/* Premium Banner */
+.banner{
+    background:linear-gradient(135deg,#ff3f6c,#ff6f91);
+    color:white;
+    text-align:center;
+    padding:45px;
+}
+
+.banner h1{
+    margin-bottom:10px;
+}
+
+/* Profile Card */
+.profile-card{
+    width:90%;
+    max-width:1100px;
+    margin:-40px auto 20px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.profile-top{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.profile-top img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid #ff3f6c;
+}
+
+.user-info h2{
+    color:#282c3f;
+    margin-bottom:8px;
+}
+
+.user-info p{
+    color:#666;
+    margin-bottom:6px;
+}
+
+.badge{
+    background:#ff3f6c;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    display:inline-block;
+    margin-top:10px;
+}
+
+/* Stats */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:30px;
+}
+
+.stat-box{
+    background:linear-gradient(135deg,#ff3f6c,#ff6f91);
+    color:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.stat-box h2{
+    margin-bottom:8px;
+}
+
+/* Main Layout */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:20px;
+}
+
+/* Sidebar */
+.sidebar{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.sidebar a{
+    display:block;
+    padding:18px;
+    text-decoration:none;
+    color:#282c3f;
+    border-bottom:1px solid #eee;
+}
+
+.sidebar a:hover{
+    background:#fafafa;
+}
+
+/* Orders Section */
+.content{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+}
+
+.order{
+    padding:18px;
+    border:1px solid #eee;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.order h3{
+    margin-bottom:5px;
+}
+
+.order p{
+    color:#666;
+}
+</style>
 </head>
 
 <body>
 
-<div class="banner">
-    <h2>Welcome Back, Santhu 👋</h2>
-    <p>Enjoy Premium Shopping Experience</p>
+<div class="header">
+    <div class="logo">Captune Cart</div>
 </div>
 
-<div class="profile">
-    <div class="profile-top">
-        <img src="https://i.pravatar.cc/200">
+<div class="banner">
+    <h1>Welcome Back, Santhu 👋</h1>
+    <p>Enjoy Your Premium Shopping Experience</p>
+</div>
 
-        <div>
-            <h1>Santhu Kumar ✓</h1>
-            <p>👑 Premium Member</p>
+<div class="profile-card">
+
+    <div class="profile-top">
+        <img src="https://i.pravatar.cc/300" alt="Profile">
+
+        <div class="user-info">
+            <h2>Santhu Kumar ✓</h2>
             <p>santhu@gmail.com</p>
+            <p>+91 98765 43210</p>
+
+            <div class="badge">
+                👑 Premium Member
+            </div>
         </div>
     </div>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h2>24</h2>
+            <span>Orders</span>
+        </div>
+
+        <div class="stat-box">
+            <h2>18</h2>
+            <span>Wishlist</span>
+        </div>
+
+        <div class="stat-box">
+            <h2>12</h2>
+            <span>Coupons</span>
+        </div>
+
+        <div class="stat-box">
+            <h2>850</h2>
+            <span>Rewards</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <a href="#">📦 My Orders</a>
+        <a href="#">❤️ Wishlist</a>
+        <a href="#">📍 Saved Addresses</a>
+        <a href="#">💳 Payment Methods</a>
+        <a href="#">🎁 Gift Cards</a>
+        <a href="#">⚙️ Settings</a>
+        <a href="#">🚪 Logout</a>
+    </div>
+
+    <div class="content">
+
+        <h2>Recent Orders</h2>
+        <br>
+
+        <div class="order">
+            <h3>⌚ Smart Watch</h3>
+            <p>Delivered Successfully ✅</p>
+        </div>
+
+        <div class="order">
+            <h3>🎧 Headphones</h3>
+            <p>Delivered Successfully ✅</p>
+        </div>
+
+        <div class="order">
+            <h3>👟 Running Shoes</h3>
+            <p>Shipped 🚚</p>
+        </div>
+
+    </div>
+
 </div>
 
 </body>
 </html>
+```
