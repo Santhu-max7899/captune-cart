@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Captune Cart Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Profile</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -13,115 +14,203 @@
 }
 
 body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#000000,#1a1a1a,#333333);
+    background:#f5f5f5;
 }
 
-.login-box{
-    width:420px;
+/* Navbar */
+nav{
     background:#111;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 0 30px rgba(255,215,0,0.5);
-    text-align:center;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-    color:#FFD700;
-    font-size:38px;
+    font-size:28px;
     font-weight:bold;
-    margin-bottom:10px;
+    color:#ff3f6c;
 }
 
-.subtitle{
-    color:#ccc;
-    margin-bottom:30px;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-input{
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-    border:1px solid #FFD700;
-    border-radius:10px;
-    background:#222;
-    color:white;
-    font-size:16px;
-}
-
-input::placeholder{
-    color:#aaa;
-}
-
-button{
-    width:100%;
-    padding:15px;
-    margin-top:15px;
-    border:none;
-    border-radius:10px;
-    background:#FFD700;
-    color:black;
-    font-size:18px;
-    font-weight:bold;
+nav ul li{
     cursor:pointer;
 }
 
-button:hover{
-    background:#FFC000;
+/* Profile Card */
+.profile-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:25px;
 }
 
-.links{
-    display:flex;
-    justify-content:space-between;
+/* Left Side */
+.profile-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.profile-card img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid #ff3f6c;
+}
+
+.profile-card h2{
     margin-top:15px;
 }
 
-.links a{
-    color:#FFD700;
-    text-decoration:none;
-}
-
-.signup{
-    margin-top:25px;
-    color:white;
-}
-
-.signup a{
-    color:#FFD700;
-    text-decoration:none;
+.premium{
+    color:gold;
     font-weight:bold;
+    margin-top:5px;
 }
 
-</style>
-</head>
+.edit-btn{
+    margin-top:20px;
+    background:#ff3f6c;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+}
 
+/* Right Side */
+.content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#ff3f6c;
+    margin-bottom:15px;
+}
+
+.order{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+.order:last-child{
+    border:none;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .profile-container{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+</style>
+
+</head>
 <body>
 
-<div class="login-box">
+<nav>
+    <div class="logo">MyShop</div>
 
-    <div class="logo">👑 Captune Cart</div>
+    <ul>
+        <li>Home</li>
+        <li>Orders</li>
+        <li>Wishlist</li>
+        <li>Profile</li>
+    </ul>
+</nav>
 
-    <div class="subtitle">
-        Welcome Back
+<div class="profile-container">
+
+    <div class="profile-card">
+        <img src="https://i.pravatar.cc/300" alt="Profile">
+        <h2>Santhu Kumar</h2>
+        <p class="premium">⭐ Premium Member</p>
+        <button class="edit-btn">Edit Profile</button>
     </div>
 
-    <input type="email" placeholder="📧 Enter Email">
+    <div class="content">
 
-    <input type="password" placeholder="🔒 Enter Password">
+        <div class="card">
+            <h3>📦 Recent Orders</h3>
 
-    <button>LOGIN</button>
+            <div class="order">
+                Nike Running Shoes
+                <br>
+                ₹4,999
+            </div>
 
-    <div class="links">
-        <a href="#">Forgot Password?</a>
-        <a href="#">Help</a>
-    </div>
+            <div class="order">
+                Apple Watch
+                <br>
+                ₹34,999
+            </div>
 
-    <div class="signup">
-        New User?
-        <a href="#">Create Account</a>
+            <div class="order">
+                Headphones
+                <br>
+                ₹2,499
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❤️ Wishlist</h3>
+
+            <div class="order">
+                iPhone 16 Pro
+            </div>
+
+            <div class="order">
+                Gaming Laptop
+            </div>
+
+            <div class="order">
+                Smart TV
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🏠 Address</h3>
+
+            <p>
+                Santhu Kumar<br>
+                Bangalore, Karnataka<br>
+                India
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💳 Payments</h3>
+
+            <p>Visa Card **** 4587</p>
+            <br>
+            <p>UPI: santhu@upi</p>
+        </div>
+
     </div>
 
 </div>
