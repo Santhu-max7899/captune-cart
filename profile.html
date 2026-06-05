@@ -1,157 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Premium Profile</title><nav class="navbar">
-    <div class="logo">SHOPX</div>
-
-    <div class="search-box">
-        <input type="text" placeholder="Search products...">
-    </div>
-
-    <div class="nav-icons">
-        <span>❤️</span>
-        <span>🛒</span>
-        <span>👤</span>
-    </div>
-</nav>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Myntra Style Profile</title>
 
 <style>
-body{
+*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#141e30,#243b55);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-.profile-card{
-    width:350px;
-    text-align:center;
-    padding:30px;
-    border-radius:25px;
-    backdrop-filter:blur(20px);
-    background:rgba(255,255,255,0.1);
-    border:1px solid rgba(255,255,255,0.2);
-    color:white;
-    box-shadow:0 20px 40px rgba(0,0,0,0.4);
-    animation:fadeIn 1.5s ease;
+body{
+    background:#f5f5f6;
 }
+
+/* Navbar */
 .navbar{
-    height:70px;
+    height:80px;
     background:white;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
     padding:0 40px;
-    box-shadow:0 2px 15px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 .logo{
-    font-size:28px;
+    font-size:30px;
     font-weight:bold;
     color:#ff3f6c;
 }
 
-.search-box input{
-    width:500px;
-    padding:12px;
-    border:none;
-    background:#f5f5f5;
-    border-radius:10px;
+.menu{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
-.nav-icons span{
-    font-size:24px;
-    margin-left:20px;
+.menu li{
+    font-weight:600;
     cursor:pointer;
 }
-.profile-img{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    border:5px solid gold;
-    object-fit:cover;
-    animation:float 3s ease-in-out infinite;
+
+.search{
+    width:350px;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background:#f5f5f6;
 }
 
-.vip{
-    background:gold;
-    color:black;
-    display:inline-block;
-    padding:8px 18px;
-    border-radius:30px;
-    font-weight:bold;
-    margin-top:10px;
-}
-
-.stats{
+.icons{
     display:flex;
-    justify-content:space-between;
-    margin-top:30px;
+    gap:20px;
+    text-align:center;
 }
 
-.box{
-    background:rgba(255,255,255,0.15);
-    padding:15px;
+/* Main Layout */
+.container{
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:25px;
+}
+
+/* Sidebar */
+.sidebar{
+    background:white;
     border-radius:15px;
-    width:90px;
-    transition:0.4s;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
-.box:hover{
-    transform:translateY(-10px);
+.sidebar h2{
+    margin-bottom:20px;
 }
 
-@keyframes float{
-    0%{transform:translateY(0);}
-    50%{transform:translateY(-15px);}
-    100%{transform:translateY(0);}
+.sidebar ul{
+    list-style:none;
 }
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(50px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+.sidebar li{
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+    cursor:pointer;
+}
+
+/* Content */
+.content{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* Profile Card */
+.profile-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.profile-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+
+.badge{
+    display:inline-block;
+    background:gold;
+    padding:6px 15px;
+    border-radius:20px;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+/* Stats */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.stat-box h2{
+    color:#ff3f6c;
+}
+
+/* Orders */
+.orders{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.order{
+    padding:15px 0;
+    border-bottom:1px solid #eee;
 }
 </style>
 
 </head>
-
 <body>
 
-<div class="profile-card">
+<nav class="navbar">
+    <div class="logo">MYNTRA</div>
 
-<img src="https://i.pravatar.cc/300" class="profile-img">
+    <ul class="menu">
+        <li>Men</li>
+        <li>Women</li>
+        <li>Kids</li>
+        <li>Beauty</li>
+    </ul>
 
-<h1>Santhu Kumar</h1>
+    <input type="text" class="search"
+    placeholder="Search for products">
 
-<div class="vip">👑 VIP MEMBER</div>
+    <div class="icons">
+        <div>👤 Profile</div>
+        <div>❤️ Wishlist</div>
+        <div>🛒 Bag</div>
+    </div>
+</nav>
 
-<div class="stats">
+<div class="container">
 
-<div class="box">
-<h2>25</h2>
-<p>Orders</p>
-</div>
+    <div class="sidebar">
+        <h2>Hello Santhu 👋</h2>
 
-<div class="box">
-<h2>12</h2>
-<p>Wish</p>
-</div>
+        <ul>
+            <li>📦 Orders</li>
+            <li>❤️ Wishlist</li>
+            <li>🎁 Coupons</li>
+            <li>🏠 Addresses</li>
+            <li>💳 Payments</li>
+            <li>⚙️ Settings</li>
+            <li>🚪 Logout</li>
+        </ul>
+    </div>
 
-<div class="box">
-<h2>2450</h2>
-<p>Points</p>
-</div>
+    <div class="content">
 
-</div>
+        <div class="profile-card">
+            <img src="https://i.pravatar.cc/200">
+
+            <div>
+                <h2>Santhu Kumar</h2>
+                <p>santhu@email.com</p>
+                <div class="badge">⭐ Premium Member</div>
+            </div>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h2>25</h2>
+                <p>Orders</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>12</h2>
+                <p>Wishlist</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>2450</h2>
+                <p>Points</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>3</h2>
+                <p>Addresses</p>
+            </div>
+
+        </div>
+
+        <div class="orders">
+            <h2>Recent Orders</h2>
+
+            <div class="order">
+                👟 Nike Shoes - ₹4,999
+            </div>
+
+            <div class="order">
+                ⌚ Smart Watch - ₹2,999
+            </div>
+
+            <div class="order">
+                🎧 Headphones - ₹1,999
+            </div>
+        </div>
+
+    </div>
 
 </div>
 
