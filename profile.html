@@ -1,275 +1,99 @@
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury My Account</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI,sans-serif;
-}
-
 body{
-    background:#0f0f0f;
-    color:white;
-}
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#f5f5f5;
+        }
 
-.header{
-    background:#111;
-    padding:20px;
-    text-align:center;
-    border-bottom:1px solid #333;
-}
+        .header{
+            background:white;
+            padding:20px;
+            display:flex;
+            align-items:center;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1); }
 
-.header h1{
-    color:#FFD700;
-}
+        .profile-pic{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            margin-right:20px;
+        }
 
-.banner{
-    margin:20px;
-    padding:30px;
-    border-radius:20px;
-    background:linear-gradient(135deg,#1a1a1a,#2a2a2a);
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}
+        .user-name{
+            font-size:24px;
+            font-weight:bold;
+        }.premium{
+            color:#ff3f6c;
+            font-weight:bold;
+        }
 
-.banner h2{
-    color:#FFD700;
-}
+        .container{
+            display:flex;
+            margin:20px;
+            gap:20px;
+        }}
 
-.profile{
-    background:#1a1a1a;
-    margin:20px;
-    padding:25px;
-    border-radius:20px;
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
+        .sidebar{
+            width:250px;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+        }
 
-.profile img{
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    border:3px solid #FFD700;
-}
+        .sidebar ul{
+            list-style:none;
+            padding:0;
+        }.sidebar li{
+            padding:12px;
+            border-bottom:1px solid #eee;
+            cursor:pointer;
+        }
 
-.stats{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    margin:20px;
-}
+        .content{
+            flex:1;
+            background:white;
+            padding:20px;
+            border-radius:10px;}
 
-.card{
-    background:#1a1a1a;
-    padding:25px;
-    border-radius:20px;
-    text-align:center;
-    transition:.3s;
-    border:1px solid #2d2d2d;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#FFD700;
-}
-
-.section{
-    background:#1a1a1a;
-    margin:20px;
-    padding:25px;
-    border-radius:20px;
-}
-
-.section h2{
-    color:#FFD700;
-    margin-bottom:15px;
-}
-
-.menu-item{
-    padding:15px;
-    border-bottom:1px solid #333;
-    display:flex;
-    justify-content:space-between;
-}
-
-.menu-item:last-child{
-    border:none;
-}
-
-.order{
-    background:#222;
-    padding:15px;
-    border-radius:12px;
-    margin-top:10px;
-}
-</style>
+        .card{
+            background:#fafafa;
+            padding:15px;
+            margin-bottom:15px;
+            border-radius:10px;   }
+    </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1> LUXURY ACCOUNT</h1>
-</div>
+    <div class="header">
+        <img src="https://i.pravatar.cc/150" class="profile-pic">
 
-<div class="banner">
-    <h2>Platinum Elite Member</h2>
-    <p>Exclusive Premium Shopping Experience</p>
-</div>
+        <div>
+            <div class="user-name">Santhu Kumar ✓</div>
+            <div class="premium">Premium Member</div>
+        </div>
+    </div>div class="container">
 
-<div class="profile">
-    <img src="https://i.pravatar.cc/200" alt="User">
+        <div class="sidebar"> </div>
 
-    <div>
-        <h2>Welcome User 👋</h2>
-        <p>Premium Elite Membership</p>
+        <div class="content">
+
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>25 Orders</p>
+            </div>
+
+            <div class="card">
+                <h3>Wishlist</h3>
+                <p>12 Products Saved</p>
+            </div>
+
+            <div class="card"> <h3>Coupons</h3>
+                <p>5 Coupons Available</p>
+            </div>
+
+        </div>
+
     </div>
-</div>
-
-<div class="stats">
-
-    <div class="card">
-        <h2>24</h2>
-        <p>Orders</p>
-    </div>
-
-    <div class="card">
-        <h2>18</h2>
-        <p>Wishlist</p>
-    </div>
-<div class="section">
-<h2>❤️ Wishlist</h2>
-
-<div class="order">⌚ Smart Watch</div>
-<div class="order">🎧 Headphones</div>
-<div class="order">👟 Nike Shoes</div><div class="section">
-    <h2> Wishlist</h2>
-
-    <div class="order">
-        ⌚ Smart Watch
-        <br>
-        <small>₹2,999</small>
-    </div>
-
-    <div class="order">
-        🎧 Headphones
-        <br>
-        <small>₹1,999</small>
-    </div>
-
-    <div class="order">
-        👟 Nike Shoes
-        <br>
-        <small>₹3,499</small>
-    </div>
-</div>
-
-
-   
-</div>
 
 </body>
 </html>
-
-</div>
-    <div class="card">
-        <h2>850</h2>
-        <p>Rewards</p>
-    </div>
-
-    <div class="card">
-        <h2>₹25K</h2>
-        <p>Wallet</p>
-    </div>
-
-</div>
-
-<div class="section">
-    <h2>💎 Premium Benefits</h2>
-
-    <p>🚚 Free Express Delivery</p>
-    <p>🎧 VIP Customer Support</p>
-    <p>🔥 Early Access Sales</p>
-    <p>💰 Premium Cashback</p>
-</div>
-
-<div class="section">
-    <h2>📦 Recent Orders</h2>
-
-    <div class="order">⌚ Smart Watch - Delivered ✅</div>
-    <div class="order">🎧 Headphones - Delivered ✅</div>
-    <div class="order">👟 Running Shoes - Shipped 🚚</div>
-</div>
-
-<div class="section">
-    <h2>⚙️ My Account</h2>
-
-    <div class="menu-item">
-        <span>📦 Orders</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>👑 Insider</span>
-        <span>›</span>
-    </div><div class="card">
-    <h2>₹25,000</h2>
-    <p>Wallet Balance</p>
-</div>
-
-    <div class="menu-item">
-        <span>🎁 Coupons</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>💰 Rewards</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>💳 Payments & Currencies</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>📍 Saved Addresses</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>🔔 Notifications</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>🎧 Help Center</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>⚙️ Settings</span>
-        <span>›</span>
-    </div>
-
-    <div class="menu-item">
-        <span>🚪 Logout</span>
-        <span>›</span>
-    </div>
-
-</div>
-
-</body>
-</html>
-```<img src="https://i.pravatar.cc/200" alt="User"><div class="section">
-    <h2>👑 Platinum Elite</h2>
-    <p>Member Since 2025</p>
-    <p>Exclusive Access • VIP Support • Premium Cashback</p>
-</div>
