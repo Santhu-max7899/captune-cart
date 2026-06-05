@@ -1,9 +1,85 @@
 <!DOCTYPE html>
 <html>
-<body style="background:black;color:gold;text-align:center;padding-top:100px;">
+<head>
+<title>Captune Cart Login</title>
 
-<h1> Captune Cart Login</h1>
-<h2>Login Page Working</h2>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:black;
+}
+
+.login-box{
+    width:400px;
+    background:#111;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 20px gold;
+}
+
+h1{
+    color:gold;
+    margin-bottom:10px;
+}
+
+p{
+    color:#ccc;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid gold;
+    border-radius:10px;
+    background:#222;
+    color:white;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:gold;
+    color:black;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ffcc00;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1> Captune Cart</h1>
+
+<p>Welcome Back</p>
+
+<input type="email" placeholder="Enter Email">
+
+<input type="password" placeholder="Enter Password">
+
+<button>LOGIN</button>
+
+</div>
 
 </body>
 </html>
