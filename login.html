@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Captune Cart Login</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#1a1a1a,#333333);
+}
+
+.login-box{
+    width:400px;
+    background:#111;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,215,0,0.5);
+    text-align:center;
+}
+
+.logo{
+    color:#FFD700;
+    font-size:36px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#ccc;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #FFD700;
+    background:#222;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+}
+
+input::placeholder{
+    color:#bbb;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#FFD700;
+    color:black;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#FFC000;
+}
+
+.forgot{
+    margin-top:15px;
+}
+
+.forgot a{
+    color:#FFD700;
+    text-decoration:none;
+}
+
+.signup{
+    margin-top:20px;
+    color:white;
+}
+
+.signup a{
+    color:#FFD700;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <div class="logo">👑 Captune Cart</div>
+
+    <div class="subtitle">
+        Welcome Back
+    </div>
+
+    <input type="email" placeholder="Enter Email">
+
+    <input type="password" placeholder="Enter Password">
+
+    <button>Login</button>
+
+    <div class="forgot">
+        <a href="#">Forgot Password?</a>
+    </div>
+
+    <div class="signup">
+        Don't have an account?
+        <a href="#">Sign Up</a>
+    </div>
+
+</div>
+
+</body>
+</html>
