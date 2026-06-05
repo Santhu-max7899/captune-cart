@@ -3,7 +3,33 @@
 <html>
 <head>
 <title>Captune Cart</title>
+<div class="search-bar">
+    <input type="text" placeholder="Search products...">
+    <button>🔍 Search</button>
+</div>.search-bar{
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+}
 
+.search-bar input{
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px 0 0 10px;
+}
+
+.search-bar button{
+    padding: 15px 25px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+}
 <style>
 body{
     margin:0;
@@ -72,7 +98,10 @@ nav a{
         <a href="login.html">Login</a>
         <a href="cart.html">Cart</a>
         <a href="profile.html">Profile</a>
-    </nav>
+    </nav><div class="search-bar">
+    <input type="text" placeholder="Search products...">
+    <button>🔍 Search</button>
+</div>
 </header>
 <section class="hero">
    
